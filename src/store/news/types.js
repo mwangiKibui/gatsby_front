@@ -1,0 +1,2 @@
+export const NEWS_PENDING = "NEWS_PENDING";
+export const NEWS_SUCCESS = "NEWS_SUCCESS";

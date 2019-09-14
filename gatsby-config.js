@@ -1,10 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Dj Deksta`,    
+    author: `@mwangiKibui`,
+    description:'dj deskta sports news business news entertainment news dj deskta mixes',
+    year:new Date().getFullYear()
   },
   plugins: [
+    'top-tracks',
+    {
+        resolve:'gatsby-source-contentful',
+        options:{
+          spaceId:process.env.SPACEID,
+          accessToken:process.env.ACCESSTOKEN
+        }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
